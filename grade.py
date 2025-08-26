@@ -1,16 +1,24 @@
+def compute_grade(score):
+    
+    if score >= 0.9:
+        return "A"
+    elif score >= 0.8:
+        return "B" 
+    elif score >= 0.7:
+        return "C"
+    elif score >= 0.6:
+        return "D"
+    else:
+        return "F"
+
 try:
     score = float(input("Enter your score between 0.0 and 1.0: "))
+
     if score < 0.0 or score > 1.0:
         print("Error: Score must be between 0.0 and 1.0")
-    elif score >= 0.9:
-        print("A")
-    elif score >= 0.8:
-        print("B") 
-    elif score >= 0.7:
-        print("C")
-    elif score >= 0.6:
-        print("D")
     else:
-        print("F")
+        grade = compute_grade(score)
+        print("Your grade is:", grade)
+
 except:
     print("Error: Please enter a numeric value")
