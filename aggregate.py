@@ -17,3 +17,6 @@ while True:
         count += 1
 
 average = total / count
+print("Count:", count)
+print("Total:", total)
+print("Average:", average)
