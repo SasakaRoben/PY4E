@@ -31,3 +31,5 @@ average = total / count
 print("Count:", count)
 print("Total:", total)
 print("Average:", average)
+print("Largest:", largest)
+print("Smallest:", smallest)
