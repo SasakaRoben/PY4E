@@ -15,3 +15,5 @@ while True:
         count = 1
     else:
         count += 1
+
+average = total / count
