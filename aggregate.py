@@ -5,7 +5,11 @@ while True:
     inp = input("Enter a number: ")
     if inp == "done":
         break
-    num = float(inp)
+    try:
+        num = float(inp)
+    except:
+        print("Invalid input")
+        continue
     total += num
     if count is None:
         count = 1
