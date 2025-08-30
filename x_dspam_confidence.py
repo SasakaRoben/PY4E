@@ -8,4 +8,5 @@ for line in fhand:
         colon_pos = line.find(':')
         number = line[colon_pos + 1:]
         number = float(number)
-        
+        count = count + 1
+        total = total + number
