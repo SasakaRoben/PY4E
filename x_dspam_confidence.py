@@ -1,7 +1,12 @@
-fname = './mbox-short.txt'
 count = 0
 total = 0.0
-fhand = open(fname)
+fname = input('Enter file name: ')
+try:
+    fhand = open(fname)
+except:
+    print('File cannot be opened:', fname)
+    exit()
+
 for line in fhand:
     line = line.rstrip()
     if line.startswith('X-DSPAM-Confidence:'):
