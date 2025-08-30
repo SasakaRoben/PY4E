@@ -10,3 +10,5 @@ for line in fhand:
         number = float(number)
         count = count + 1
         total = total + number
+
+print('Average spam confidence:', total / count)
