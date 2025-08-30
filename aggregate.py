@@ -1,10 +1,8 @@
 total = 0
-count = None
-largest = None
-smallest = None
+numbers = list()
 
 while True:
-    inp = input("Enter a number: ")
+    inp = input("Enter a number or 'done' to stop: ")
     if inp == "done":
         break
 
@@ -14,22 +12,11 @@ while True:
         print("Invalid input")
         continue
 
-    total += num
+    numbers.append(num)
 
-    if count is None:
-        count = 1
-    else:
-        count += 1
-    
-    if largest is None or num > largest:
-        largest = num
-    
-    if smallest is None or num < smallest:
-        smallest = num
-
-average = total / count
-print("Count:", count)
-print("Total:", total)
+average = sum(numbers) / len(numbers)
+print("Count:", len(numbers))
+print("Total:", sum(numbers))
 print("Average:", average)
-print("Largest:", largest)
-print("Smallest:", smallest)
+print("Largest:", max(numbers))
+print("Smallest:", min(numbers))
