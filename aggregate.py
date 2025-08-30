@@ -14,6 +14,9 @@ while True:
 
     numbers.append(num)
 
+if len(numbers) == 0:
+    print("No numbers were entered.")
+    exit()
 average = sum(numbers) / len(numbers)
 print("Count:", len(numbers))
 print("Total:", sum(numbers))
