@@ -20,4 +20,3 @@ print('After chop():', names)
 names = ['Roben', 'Sasaka', 'Melody', 'Murengu', 'Moses', 'Muiga', 'Mutahi']
 print('Original List:', names)
 print('After middle():', middle(names))
-
