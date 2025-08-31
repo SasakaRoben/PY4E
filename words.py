@@ -27,3 +27,8 @@ for line in fhand:
 
 if len(unique_values) > len(unique_keys):
     unique_values = unique_values[:len(unique_keys)]
+else:
+    unique_keys = unique_keys[:len(unique_values)]
+
+
+
