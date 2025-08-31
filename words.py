@@ -10,6 +10,7 @@ Then you can use the `in` operator as a fast way to check whether a string is in
 """
 unique_keys = list()
 unique_values = list()
+word_dict = dict()
 fhand = open('words.txt')
 for line in fhand:
     words = line.split()
@@ -24,3 +25,5 @@ for line in fhand:
         if word not in unique_values:
             unique_values.append(word)
 
+if len(unique_values) > len(unique_keys):
+    unique_values = unique_values[:len(unique_keys)]
