@@ -30,5 +30,8 @@ if len(unique_values) > len(unique_keys):
 else:
     unique_keys = unique_keys[:len(unique_values)]
 
+for i in range(len(unique_keys)):
+    word_dict[unique_keys[i]] = unique_values[i]
 
+print(word_dict)
 
