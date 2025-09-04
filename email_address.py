@@ -15,12 +15,13 @@ for line in fhand:
 
 print(address_count)
 
-biggest = None
-big_address = None
-keys_list = list(address_count.keys())
-for key in keys_list:
-    if biggest is None or address_count[key] > biggest:
-        biggest = address_count[key]
-        big_address = key
 
-print(big_address, biggest)
+address_list = list()
+for email, count in address_count.items():
+    address_list.append((count, email))
+
+address_list.sort(reverse=True)
+for count, email in address_list[:1]:
+    print(email, count)
+
+    
