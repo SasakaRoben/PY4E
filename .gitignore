@@ -3,3 +3,5 @@
 *.jpg
 *.png
 practicing.py
+bs4/
+soupsieve/
